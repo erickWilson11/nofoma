@@ -18,7 +18,7 @@ body {
       rgba(3, 3, 3, 0.733),
       rgba(24, 207, 131, 0.466)
     ),
-    url("../images/immeubles.jpg");
+    url("../../public/images/immeubles.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
