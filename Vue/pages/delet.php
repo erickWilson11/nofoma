@@ -1,4 +1,7 @@
 <?php
+$user_id = $_GET['id'];
+
+
 $host = "localhost";
 $username = "root";
 $password = "";
@@ -13,5 +16,11 @@ if (!$conn) {
 }
 
 
+$sql = "DELETE FROM employe where id =$user_id";
+if (mysqli_query($conn,$sql)){
+    header ("location:./employer.php?message=DeleteSucces");
+}else{
+  header("location:./employer.php?message=DeleteFail");
+}
 
 ?>

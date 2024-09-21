@@ -78,6 +78,8 @@ switchMode.addEventListener('change', function () {
 
 // Get the modal
 var modal = document.getElementById("myModal");
+var modals = document.getElementById("myModal");
+var tacheModal = document.getElementById("myModal");
 
 // Get the button that opens the modal
 var btn = document.getElementById("add");
@@ -93,6 +95,8 @@ btn.onclick = function() {
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
+//   modals.style.display="none";
+//   tacheModal.style.display="none";
 }
 
 // When the user clicks anywhere outside of the modal, close it

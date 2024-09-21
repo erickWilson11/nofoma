@@ -14,7 +14,7 @@
   --black: #333;
   --white: #fff;
   --light-bg: #eee;
-  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  --box-shadow: 0 5px 10px rgba(226, 221, 221, 0);
     --cl-vert: #09bc83;
   
 }
@@ -441,6 +441,11 @@ body {
   font-size: 13px;
   text-align: left;
   border-bottom: 1px solid var(--grey);
+  
+}
+
+.order table:nth-child(3){
+  color: orange;
 }
 #content main .table-data .order table td {
   padding: 16px 0;
@@ -582,9 +587,7 @@ body {
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
-
-/* Modal Content/Box */
-.modal-content {
+.modal .modal-content {
   background-color: #fefefe;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
@@ -593,6 +596,31 @@ body {
   border: 1px solid #888;
   width: 40%; /* Could be more or less, depending on screen size */
 }
+.modals {
+
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  margin-left: 200px;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modals .modal-contents {
+  background-color: #f3ecec;
+  margin: 10% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border-radius: 20px;
+  font-family: var(--lato);
+  border: 1px solid #888;
+  width: 60%; /* Could be more or less, depending on screen size */
+}
+
 
 /* The Close Button */
 .close {
@@ -817,5 +845,8 @@ body {
 }
 .logo img{
     width: 30px;
+    justify-content: space-between;
     height: 30px;
 }
+
+

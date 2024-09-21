@@ -1,4 +1,7 @@
 <?php
+$user_id = $_GET['id'];
+
+
 $host = "localhost";
 $username = "root";
 $password = "";
@@ -13,5 +16,11 @@ if (!$conn) {
 }
 
 
+$sql = "DELETE FROM tâche where id =$user_id";
+if (mysqli_query($conn,$sql)){
+    header ("location:./tache.php?message=DeleteSucces");
+}else{
+  header("location:./tache.php?message=DeleteFail");
+}
 
 ?>
